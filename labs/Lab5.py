@@ -2,7 +2,7 @@ import random
 
 random_number = random.randint(1, 30)
 
-print("Guess Number Game!")
+print("Guess The Number Game!")
 print("Guess a number between 1 and 30. Try your best to guess it.")
 
 attempts = 0
