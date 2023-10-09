@@ -21,7 +21,7 @@ https://stackoverflow.com/questions/6786990/find-out-time-it-took-for-a-python-s
 
 This talked about the import of data time but didn't really do much
 
-I went of this from the website: 
+I went off this from the website: 
 - from datetime import datetime startTime = datetime.now() 
 - do something 
 - Python 2: print datetime.now() - startTime 
