@@ -10,7 +10,7 @@ Through the functions we get through the "import datetime" we can use the comman
 3. The last thing to do is print it; put what you want in " " and put what you named the string at the end for me it is timedate_format
 
 ## Instructions: 
-You would first download this file, go to a machine that has python install so you can use the commands it has available. 
+You would first download this file, and go to a linux machines command prompt that has python install so you can use the commands it has available. 
 And to get the desired result you would type python than the files name in the command prompt. 
 So it would look something like this: 
 
