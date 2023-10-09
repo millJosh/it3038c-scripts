@@ -16,7 +16,7 @@ So it would look something like this:
 
 python time_and_date_currently.py
 
-### Reference:
+## Reference:
 https://stackoverflow.com/questions/6786990/find-out-time-it-took-for-a-python-script-to-complete-execution 
 
 This talked about the import of data time but didn't really do much
