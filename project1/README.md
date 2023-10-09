@@ -1,4 +1,4 @@
-Reference: 
+Reference:
 https://stackoverflow.com/questions/6786990/find-out-time-it-took-for-a-python-script-to-complete-execution 
 This talked about the import of data time but didn't really do much
 
@@ -19,5 +19,5 @@ You would first download this file, go to a machine that has python install so y
 And to get the desired result you would type python than the files name in the command prompt. 
 So it would look something like this: python time_and_date_currently.py
 
-This is the expected output: 
+This is an example of the expected output: 
 ('Date and Time Currently', 'Date: 10-09-2023 | Time: 06:21:54 PM')
