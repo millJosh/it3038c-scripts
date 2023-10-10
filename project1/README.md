@@ -11,7 +11,7 @@ Through the function "import datetime" we can use the commands it provides us to
 
 ## Instructions: 
 You would first download the project file, and go to a machine (perferably a linux machine) that has python install and move the file there so you can use the commands to run this project. 
-And to get the result as shown, "cd" to the directory with the file in it and you would type python than the files name in the command prompt. 
+And to get the result as shown, in the command prompt go to the directory with the file in it and you would type python than the files name in the command prompt. 
 So it would look something like this: 
 
 python time_and_date_currently.py
