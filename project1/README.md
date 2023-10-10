@@ -19,7 +19,7 @@ python time_and_date_currently.py
 ## Reference:
 https://stackoverflow.com/questions/6786990/find-out-time-it-took-for-a-python-script-to-complete-execution 
 
-This talked about the import of date time but it didn't really do much in terms of how I wanted it too look and I wanted it to do
+This talked about the import of date time but it didn't really do much in terms of how I wanted it too look and what I wanted it to do
 
 I went off this from the website: 
 - from datetime import datetime startTime = datetime.now() 
