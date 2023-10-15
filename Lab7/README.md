@@ -28,7 +28,8 @@ Now Numpy should be up and running now and you should be able to run my script
 ### How to run my code
 
 When you take a look at the file their will be comments that tell you what each section does and how it works so 
-I would recommend you read those comments and try things for yourself at the bottom of the script or if you want see the output go to the directory you download it too and run:
+I would recommend you read those comments and try things for yourself at the bottom of the script or if you just want to see the output go to the command prompt 
+and cd to the directory you downloaded the file too and type in:
 
 #### python Lab7.py
 
