@@ -1,9 +1,9 @@
 # Using Numpy in Python!
 Here is how you can run a python script that I created
 
-You need to first go to a machine that has python instead perferable a centos machine, which is what I ran my code on
+You need to first go to a machine that has python instead preferable a centos machine, which is what I ran my code on
 
-To check your python version you can do: 
+You should have python since you are apart of this class, and to check your python version you can do: 
 
 #### python --version
 
@@ -21,7 +21,9 @@ for verions that start with a 2 and on or use:
 
 for versions 3.4 and later
 
-Numpy should be up and running now and you should be able to run my script 
+and then run the install numpy code above again
+
+Now Numpy should be up and running now and you should be able to run my script 
 
 ### How to run my code
 
