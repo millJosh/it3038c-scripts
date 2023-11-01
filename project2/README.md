@@ -36,6 +36,7 @@ $ npm --version
 To install Node on Linux, we can use a provided RPM install. According to https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora, just run the following:
 
 $ curl --silent --location https://rpm.nodesource.com/setup_14.x | sudo bash -
+
 $ sudo yum -y install nodejs	
 
 You also need to verfiy it by the same commands as above
