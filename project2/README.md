@@ -4,6 +4,8 @@
 # Example of expected output in MemoryData.txt:
 ![Project2-2](https://github.com/millJosh/it3038c-scripts/assets/113854085/2e031d0f-0022-43a1-9ed8-7d4f80a5e398)
 
+### Keep in mind that the data shows you you will be different, however the names should still be the same!
+
 ## What it shows:
 1. It shows how much memory someone has used, how much is left available, and the total amount of memory on their drive space. 
 2. Also shows the percentages of the available and used memory.
