@@ -71,13 +71,16 @@ And that is everything, I thank you for your time!
 
 ## References:
 https://nodejs.org/api/os.html 
+
 I used this entire site a lot as I was going through my project, not just this paged I linked
 
 https://stackoverflow.com/questions/15900485/correct-way-to-convert-size-in-bytes-to-kb-mb-gb-in-javascript
+
 For my byte sizes
 
 https://github.com/nodejs/help/issues/2116
+
 Helped me with fs
 
-I also used other sites but I can't remember were, but they were more for code comfirmation, and would help me figure out what I needed to type in my code.
+I also used other sites but I can't remember what they were, but they were more for code comfirmation, and would help me figure out what I needed to type in my code.
 
