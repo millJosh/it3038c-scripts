@@ -22,7 +22,7 @@ Through the modules const os = require('os') and const fs = require('fs') we can
 1. We can use the same functions as before for the math we need to do for the percentages, we just need to name them and do some mutiplication and division.
 2. The other thing we need to do is change the way it is outputted to let it show as a percentage.
 
-### Part 3:
+### Part 3: Creating a file with the data we made
 1. We need to make a function for the file we want to create, in this function we want to put in all the fields we made before.
 2. Through the fs method we can make sure all that information is going to our txt file.
 3. We also want to make sure that if a error occurs then it prints out a message for it but if it succeeds it prints "Memory data saved to MemoryData.txt".
