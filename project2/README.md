@@ -1,7 +1,9 @@
 # Example of expected output: 
-('Date and Time Currently', 'Date: 10-09-2023 | Time: 06:21:54 PM')
+Total Space: 4 GB
+Free Space: 1 GB
+Used Space: 2 GB
 
-It shows the date and time currently where someone is when they run this command
+It shows how much sapce someone has used, has aviabale and the total amount of their space
 
 ## How it functions: 
 Through the function "import datetime" we can use the commands it provides us to show our date and time in a simple manner.
@@ -17,12 +19,4 @@ So it would look something like this:
 python time_and_date_currently.py
 
 ## Reference:
-https://stackoverflow.com/questions/6786990/find-out-time-it-took-for-a-python-script-to-complete-execution 
 
-This talked about the import of date time but it didn't really do much in terms of how I wanted it too look and what I wanted it to do
-
-I went off this from the website: 
-- from datetime import datetime startTime = datetime.now() 
-- do something 
-- Python 2: print datetime.now() - startTime 
-- Python 3: print(datetime.now() - startTime)
