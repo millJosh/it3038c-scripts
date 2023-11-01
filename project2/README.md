@@ -1,20 +1,34 @@
-# Example of expected output: 
-Total Space: 4 GB
+# Example of expected output in Command Prompt: 
+![Project2-1](https://github.com/millJosh/it3038c-scripts/assets/113854085/0d817b47-8ef4-4c13-bd80-d3850d9128fb)
 
-Free Space: 1 GB
+# Example of expected output in MemoryData.txt:
+![Project2-2](https://github.com/millJosh/it3038c-scripts/assets/113854085/2e031d0f-0022-43a1-9ed8-7d4f80a5e398)
 
-Used Space: 2 GB
+1. It shows how much memory someone has used, how much is left available, and the total amount of memory on their drive space. 
 
-It shows how much space someone has used, has available and the total amount of their hard drive space.
+2. Also shows the percentages of the available and used memory.
+
+3. Lastly, it takes those values caculated and puts them into a MemoryData file in your directory, so you can use it for future reasons, it does it three times and for the sake of your time and mine it's only on a 10 second timer. 
 
 ## How it functions: 
 Through the modules const os = require('os') and const fs = require('fs') we can retreive information, such as the system memory in this case we use it to find total, used and available hard drive space. To follow along with the steps below please look at the code as you read so it can give you a better understanding. 
 
+### Part 1: Displaying the memory on your Hard Drive
 1. First import the modules we need to get the data we want which we talk about above, those being const os = require('os') and const fs = require('fs').
 2. Next, we need to make a function for the bytes that we would like displayed, something that goes from bytes to terabytes.
 3. Then we we identify the infromation we want from the system through the methods that the os module gives like total memory or free memory.
 4. The last thing to do is display the infromation we want, the total space, available space and used space.
 
+### Part 2: Displaying the data earlier as percentages
+1. We can use the same functions as before for the math we need to do for the percentages, we just need to name them and do some mutiplication and division.
+2. The other thing we need to do is change the way it is outputted to let is show as a percentage.
+
+### Part 3:
+1. We need to make a function for the file we want to create.
+2. In the function we want to put in all the fields we made before.
+3. Through the fs method we can make sure the information is going to our txt file.
+4. We also want to make sure that if a error occurs then it prints that but if it succeds it prints something else
+5. By using interval and setInterval we can make the file update itself contiounsly, and after 3 times of doing so it stops itself. 
 
 ## Instructions: 
 First if you didn't you need to install node to run this lab (You should have already done this since it was needed for a previous lab, if you have it skip the installing steps) if you don't have node installed, I have some instructions to help you download it on linux (preferred) or powershell.
@@ -49,6 +63,10 @@ You should be able to use Node now, next you just need to download the project f
 So it would look something like this:
 
 node project2.js
+
+After you have run it and you want to look at the file it make go to your files on your computer and the directory you used on your command prompt and it should be there.
+
+And that is everything, I thank you for your time!
 
 ## Reference:
 
