@@ -4,10 +4,9 @@
 # Example of expected output in MemoryData.txt:
 ![Project2-2](https://github.com/millJosh/it3038c-scripts/assets/113854085/2e031d0f-0022-43a1-9ed8-7d4f80a5e398)
 
+## What it shows:
 1. It shows how much memory someone has used, how much is left available, and the total amount of memory on their drive space. 
-
 2. Also shows the percentages of the available and used memory.
-
 3. Lastly, it takes those values caculated and puts them into a MemoryData file in your directory, so you can use it for future reasons, it does it three times and for the sake of your time and mine it's only on a 10 second timer. 
 
 ## How it functions: 
