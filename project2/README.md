@@ -10,7 +10,7 @@
 3. Lastly, it takes those values caculated and puts them into a MemoryData file in your directory, so you can use it for future reasons, it does it three times and for the sake of your time and mine it's only on a 10 second timer. 
 
 ## How it functions: 
-Through the modules const os = require('os') and const fs = require('fs') we can retreive information, such as the system memory in this case we use it to find total, used and available hard drive space. To follow along with the steps below please look at the code as you read so it can give you a better understanding. 
+Through the modules const os = require('os') and const fs = require('fs') we can retreive information, such as the system memory in this case we can use it to find total, used and available hard drive memory. If you choose to follow along with the steps below please look at the code as you read so it can give you a better understanding. 
 
 ### Part 1: Displaying the memory on your Hard Drive
 1. First import the modules we need to get the data we want which we talk about above, those being const os = require('os') and const fs = require('fs').
@@ -20,17 +20,16 @@ Through the modules const os = require('os') and const fs = require('fs') we can
 
 ### Part 2: Displaying the data earlier as percentages
 1. We can use the same functions as before for the math we need to do for the percentages, we just need to name them and do some mutiplication and division.
-2. The other thing we need to do is change the way it is outputted to let is show as a percentage.
+2. The other thing we need to do is change the way it is outputted to let it show as a percentage.
 
 ### Part 3:
-1. We need to make a function for the file we want to create.
-2. In the function we want to put in all the fields we made before.
-3. Through the fs method we can make sure the information is going to our txt file.
-4. We also want to make sure that if a error occurs then it prints that but if it succeds it prints something else
-5. By using interval and setInterval we can make the file update itself contiounsly, and after 3 times of doing so it stops itself. 
+1. We need to make a function for the file we want to create, in this function we want to put in all the fields we made before.
+2. Through the fs method we can make sure all that information is going to our txt file.
+3. We also want to make sure that if a error occurs then it prints out a message for it but if it succeeds it prints "Memory data saved to MemoryData.txt".
+4. By using interval and setInterval we can make the file update itself continuously, and after 3 times of doing so it stops itself. 
 
 ## Instructions: 
-First if you didn't you need to install node to run this lab (You should have already done this since it was needed for a previous lab, if you have it skip the installing steps) if you don't have node installed, I have some instructions to help you download it on linux (preferred) or powershell.
+First if you didn't, you need to install node to run this lab (You should have already done this since it was needed for a previous lab, if you have it skip the installing steps) if you don't have node installed, I have some instructions to help you download it on linux (preferred) or powershell.
 
 ### Installing Node on Windows
 Download the installer from https://nodejs.org/en/download/
@@ -63,7 +62,7 @@ So it would look something like this:
 
 node project2.js
 
-After you have run it and you want to look at the file it make go to your files on your computer and the directory you used on your command prompt and it should be there.
+After you have run it and you want to look at the file it made, go to your files on your computer and the directory you used on your command prompt and it should be there.
 
 And that is everything, I thank you for your time!
 
