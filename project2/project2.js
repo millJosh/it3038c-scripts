@@ -8,9 +8,9 @@ function bytesToSize(bytes) {
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 }
 
-const totalSpace = os.totalmem();
-const freeSpace = os.freemem();
+const availableMemory = os.freemem();
+const totalMemory = os.totalmem();
 
-console.log('Total Space:', bytesToSize(totalSpace));
-console.log('Free Space:', bytesToSize(freeSpace));
-console.log('Used Space:', bytesToSize(totalSpace - freeSpace));
+console.log('Total Memory:', bytesToSize(totalMemory));
+console.log('Available Memory:', bytesToSize(availableMemory));
+console.log('Used Memory:', bytesToSize(totalMemory - availableMemory));
