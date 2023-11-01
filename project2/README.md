@@ -1,6 +1,8 @@
 # Example of expected output: 
 Total Space: 4 GB
+
 Free Space: 1 GB
+
 Used Space: 2 GB
 
 It shows how much sapce someone has used, has aviabale and the total amount of their space
