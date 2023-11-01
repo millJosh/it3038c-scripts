@@ -1,4 +1,5 @@
 //First Part: Telling someone how much memory they have
+
 const os = require('os');
 const fs = require('fs');
 
