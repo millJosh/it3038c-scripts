@@ -44,7 +44,9 @@ You also need to verfiy it by the same commands as above
 $ node --version $ npm --version
 
 ### Using Node
-You should be able to use Node now, next you just need to download the project file "project2.js", and go to a machine (I would personal use a linux machine) that you installed node on and move the file there so you can use the commands to run this project. And to get the result as shown above, in the command prompt go to the directory with the file in it and you would type node than the files name in the command prompt. So it would look something like this:
+You should be able to use Node now, next you just need to download the project file "project2.js", and go to a machine (I would personal use a linux machine) that you installed node on and move the file there so you can use the commands to run this project, or you could just download the file on that machine as well. And to get the result as shown above, in the command prompt go to the directory with the file in it and you would type node than the files name in the command prompt. 
+
+So it would look something like this:
 
 node project2.js
 
