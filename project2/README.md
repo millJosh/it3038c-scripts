@@ -4,7 +4,7 @@
 # Example of expected output in MemoryData.txt:
 ![Project2-2](https://github.com/millJosh/it3038c-scripts/assets/113854085/2e031d0f-0022-43a1-9ed8-7d4f80a5e398)
 
-### Keep in mind that the data shows you you will be different, however the names should still be the same!
+### Please keep in mind that the data it shows you will be different, however the names should still be the same for the command prompt and the file!
 
 
 ## What it shows:
