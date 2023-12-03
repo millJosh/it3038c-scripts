@@ -14,11 +14,12 @@
 ![Error](https://github.com/millJosh/it3038c-scripts/assets/113854085/f3583b08-f2f1-4d2b-8065-07c15af765a4)
 
 
-### Please keep in mind that the data it shows you will be different, however, the names should still be the same for the command prompt, file, and web browser, Also if your port 3000 is occupied chances are my code will not work in a web browser, you can either change the file outputs to a different port, or you might have to clear that port for it to work on the web
+# Please keep in mind the following:
+## The data it shows you will be different, however, the names should still be the same for the command prompt, file, and web browser, Also if your port 3000 is occupied chances are my code will not work in a web browser, you can either change the file outputs to a different port, or you might have to clear that port for it to work on the web
 
-## Two more things
-# I did mine in Linux Centos, so the people who do it their will have a smoother time I did not try this on powershell but it should work on their as well if you can downloaded everything needed 
-# Also, if the files are taking a while to populate or if anything pops up let the script contuine to run it will makes the files eventually, we all have different systems so keep that in mind
+# Two more things
+## I did mine in Linux Centos, so the people who do it their will have a smoother time I did not try this on powershell but it should work on their as well if you can downloaded everything needed 
+## Also, if the files are taking a while to populate or if anything pops up let the script contuine to run it will makes the files eventually, we all have different systems so keep that in mind
 
 ## This project is adding to my second project I will put a link to that here: https://github.com/millJosh/it3038c-scripts/tree/main/project2 
 
