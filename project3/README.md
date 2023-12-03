@@ -1,8 +1,8 @@
 # Example of expected output in Command Prompt: 
-![Project2-1](https://github.com/millJosh/it3038c-scripts/assets/113854085/0d817b47-8ef4-4c13-bd80-d3850d9128fb)
+
 
 # Example of expected output in MemoryData.txt:
-![Project2-2](https://github.com/millJosh/it3038c-scripts/assets/113854085/2e031d0f-0022-43a1-9ed8-7d4f80a5e398)
+
 
 ### Please keep in mind that the data it shows you will be different, however, the names should still be the same for the command prompt, file, and web browser
 
