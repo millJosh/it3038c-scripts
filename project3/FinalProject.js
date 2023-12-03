@@ -65,7 +65,7 @@ async function grabCpuTemperature() {
 }
 
 // CPU usage and has an error message if it can't be obtained by catching the invalid CPU usage data
-async function cpuUsage() {
+async function grabCpuUsage() {
     try {
         const usage = await si.currentLoad();
         const currentLoad = usage.cpus[0]?.load;
@@ -141,7 +141,7 @@ async function systemDatandNmapData() {
         let cpuTemperature, cpuUsage;
 
         cpuTemperature = await grabCpuTemperature();
-        cpuUsage = await cpuUsage();
+        cpuUsage = await grabCpuUsage();
 
         const diskSpaceInfo = await diskSpace();
         const networkInfo = await grabNetworkInfo();
