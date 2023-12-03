@@ -8,7 +8,7 @@
 ![SecurityLookUp](https://github.com/millJosh/it3038c-scripts/assets/113854085/0d8542eb-044d-4c45-9fe3-063da0f9e0e9)
 
 # Example of expected output in web browser
-![Uploading Web.png…]()
+![Web](https://github.com/millJosh/it3038c-scripts/assets/113854085/05804775-cb1a-41e5-a0be-cee4ca54755c)
 
 # Example of error output:
 ![Error](https://github.com/millJosh/it3038c-scripts/assets/113854085/f3583b08-f2f1-4d2b-8065-07c15af765a4)
