@@ -1,7 +1,17 @@
 # Example of expected output in Command Prompt: 
+![Command P](https://github.com/millJosh/it3038c-scripts/assets/113854085/abb257db-401e-43a0-a45a-35db8c0bef74)
 
+# Example of expected output in SystemInformation.txt:
+![SystemInfo](https://github.com/millJosh/it3038c-scripts/assets/113854085/7a9e2bf7-9095-41b3-9149-3ebc4aa6b364)
 
-# Example of expected output in MemoryData.txt:
+# Example of expected output in SecurityLookUp.txt:
+![SecurityLookUp](https://github.com/millJosh/it3038c-scripts/assets/113854085/0d8542eb-044d-4c45-9fe3-063da0f9e0e9)
+
+# Example of expected output in web browser
+![Uploading Web.png…]()
+
+# Example of error output:
+![Error](https://github.com/millJosh/it3038c-scripts/assets/113854085/f3583b08-f2f1-4d2b-8065-07c15af765a4)
 
 
 ### Please keep in mind that the data it shows you will be different, however, the names should still be the same for the command prompt, file, and web browser
