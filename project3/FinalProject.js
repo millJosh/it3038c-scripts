@@ -8,7 +8,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Formatting Data Size
+// Data size format
 function dataSize(bytes) {
     const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
     if (bytes === 0) return '0 Byte';
@@ -81,7 +81,7 @@ async function cpuUsage() {
     }
 }
 
-// This lets someone extract the Disk information I think is most useful to a person running the script
+// This lets someone extract the disk information I think is most useful to a person running the script
 async function diskSpace() {
     try {
         const disks = await si.fsSize();
@@ -98,7 +98,7 @@ async function diskSpace() {
     }
 }
 
-// This displays the Network Information I think users would have to search for and can be tedious so I wanted to help with that
+// This displays the network information I think users would have to search for and it can be tedious so I wanted to help with that
 async function grabNetworkInfo() {
     try {
         const networkInfo = await si.networkInterfaces();
