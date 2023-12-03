@@ -99,6 +99,8 @@ The script should still be running after you are done go to your command prompt 
 And that is everything, I thank you for your time!
 
 ## References:
+I used my second project and a ton of websites including google
+
 https://nodejs.org/api/os.html 
 
 I used this entire site a lot as I was going through my project, not just this paged I linked
@@ -107,8 +109,17 @@ https://stackoverflow.com/questions/15900485/correct-way-to-convert-size-in-byte
 
 For my byte sizes
 
-https://github.com/nodejs/help/issues/2116
+https://snyk.io/advisor/npm-package/systeminformation/functions/systeminformation.cpuTemperature
 
-Helped me with fs
+CPU temp took inspriation for my CPU usuage as well
+
+https://www.tabnine.com/code/javascript/functions/systeminformation/fsSize
+
+Helped me with disk space
+
+https://stackoverflow.com/questions/30763496/how-to-promisify-nodes-child-process-exec-and-child-process-execfile-functions
+
+Helped with the promises from the child dependency
+
 
 I also used other sites but I can't remember what they were, but they were more for code comfirmation, and would help me figure out what I needed to type in my code.
