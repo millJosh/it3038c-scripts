@@ -35,12 +35,12 @@ async function taskRetry(asyncTask, maxRetries = 3, retryDelay = 1000) {
     throw new Error(`Can't complete task, no more attempts.`);
 }
 
-// Lets me create a delay with the use of promises
+// Lets me create a delay with the use of promises from the child_process dependency
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Displays system information like the name, architecture, and uptime
+// Displays system information like the name, architecture, and uptime, for the uptime I added values to make it the time I wanted it to show
 function systemInfo() {
     const osType = os.type();
     const osArch = os.arch();
@@ -53,7 +53,7 @@ function systemInfo() {
     };
 }
 
-// CPU temperature has an error message if it can't be obtained
+// CPU temperature and this also has an error catch message if it can't be obtained
 async function grabCpuTemperature() {
     try {
         const temperature = await si.cpuTemperature();
@@ -64,7 +64,7 @@ async function grabCpuTemperature() {
     }
 }
 
-// CPU usage and has an error message if it can't be obtained by catching the invalid CPU usage data
+// CPU usage and has an error message if it can't be obtained
 async function grabCpuUsage() {
     try {
         const usage = await si.currentLoad();
@@ -98,7 +98,7 @@ async function diskSpace() {
     }
 }
 
-// This displays the network information I think users would have to search for and it can be tedious so I wanted to help with that
+// This displays the network information I think users would have to search for and it can be tedious, so I wanted to help with that
 async function grabNetworkInfo() {
     try {
         const networkInfo = await si.networkInterfaces();
@@ -115,7 +115,7 @@ async function grabNetworkInfo() {
     }
 }
 
-// This will grab the private IP address from the user's machine and will retry it until it is found
+// This will grab the private IP address from the user's machine and print a error message if it can't
 async function grabPrivateIpAddress() {
     return new Promise((resolve, reject) => {
         network.get_private_ip((err, ip) => {
@@ -129,7 +129,7 @@ async function grabPrivateIpAddress() {
     });
 }
 
-// This is my Nmap scan; I also made the files output through this section as well
+// This is the section for my Nmap scan and system data; I also made the files output through this section as well
 async function systemDatandNmapData() {
     await taskRetry(async () => {
         const totalMemory = os.totalmem();
@@ -179,12 +179,12 @@ async function systemDatandNmapData() {
         fs.writeFileSync(outputFilePath, dataInfo);
         console.log('System info saved to SystemInformation.txt');
 
-        // Runs an Nmap scan after a system data file is created
+        // Runs an Nmap scan after a system data file is created (the systemDatandNmapData scan)
         await taskRetry(() => runNmapScan(targetIpAddress));
     });
 }
 
-// This runs another Nmap scan and saves what is outputted through this section as well
+// This runs another Nmap scan and saves what is outputted a standalone scan but contrubites the security lookup file
 async function runNmapScan(targetIpAddress) {
     await taskRetry(() => _runNmapScan(targetIpAddress));
 }
@@ -219,6 +219,7 @@ function _runNmapScan(targetIpAddress) {
 
 // Once the script runs this will save the data immediately and then after 30 seconds
 // I didn't put a stop to this so users can look at the browser freely; they can stop it on their own with control and c in the command prompt
+
 systemDatandNmapData();
 const interval = setInterval(systemDatandNmapData, 30000);
 
@@ -229,7 +230,7 @@ app.get('/', async (req, res) => {
         const systemInformation = fs.readFileSync('SystemInformation.txt', 'utf8');
         const securityLookUp = fs.readFileSync('SecurityLookUp.txt', 'utf8');
 
-        // Sends file content as the response
+        // Sends files content as the response
         res.send(`
             <pre>System Information:
             ${systemInformation}</pre>
