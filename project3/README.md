@@ -71,7 +71,7 @@ You also need to verify it by the same commands as above
 
 $ node --version $ npm --version
 
-### IMPORTANT! You will also need to install dependencies to use this lab 
+### IMPORTANT! You will also need to install dependencies to use this project
 
 The simplest way is to do the following in a command prompt:
 
