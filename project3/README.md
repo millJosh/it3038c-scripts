@@ -98,7 +98,7 @@ The script should still be running after you are done go to your command prompt 
 And that is everything, I thank you for your time!
 
 ## References:
-I used my second project and a ton of websites including Google, and the GitHub link for class
+I used my second project and a ton of websites including Google, Youtube and the GitHub link for class
 
 https://nodejs.org/api/os.html 
 
