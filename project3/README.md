@@ -27,8 +27,8 @@
 - CPU’s Temperature and usage
 - Memory Status (refer to the link for project 2)
 - Disk Data 
-- The Network Interfaces
-2. It automatically does a network scan of your local IP address to find potential vulnerabilities in the network using Nmap
+- Network Interfaces
+2. It automatically does a network scan of your local(private) IP address to find potential vulnerabilities in the network using Nmap
 3. It logs all these pieces of data in 2 different log files one for the system data and one for the nmap scan data
 4. It takes these logs and puts them in a web browser for users to look at instead of having to open two files. Someone can go to the browser https://localhost:3000 either by clicking on the link in the command prompt or searching for it and see the files in real time as they update. Of course, you can still go to the files themselves and see them but you would have to reload them as the script is still running, the plus side of viewing the files is that the data will be saved in there when you stop the script and you can secure those files yourself. The web browser doesn't have this option and will end when you stop the script(if your lucky the screen will stay and you can still view the data in the web browser depending on your connection). I also didn’t put a count on how long the files will update because I want users to be able to look at the web browser for as long as they want. They can end it by hitting control and C at the same time. 
 5. It also has a triple count of retry throws that will happen if an error occurs I don’t expect users to go through this so I will upload an example of it above.
