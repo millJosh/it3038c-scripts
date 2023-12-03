@@ -14,20 +14,24 @@
 ![Error](https://github.com/millJosh/it3038c-scripts/assets/113854085/f3583b08-f2f1-4d2b-8065-07c15af765a4)
 
 
-### Please keep in mind that the data it shows you will be different, however, the names should still be the same for the command prompt, file, and web browser
+### Please keep in mind that the data it shows you will be different, however, the names should still be the same for the command prompt, file, and web browser, Also if your port 3000 is occupied chances are my code will not work in a web browser, you can either change the file outputs to a different port, or you might have to clear that port for it to work on the web
 
-##This project is adding to my second project I will put a link to that here: https://github.com/millJosh/it3038c-scripts/tree/main/project2
+## Two more things
+# I did mine in Linux Centos, so the people who do it their will have a smoother time I did not try this on powershell but it should work on their as well if you can downloaded everything needed 
+# Also, if the files are taking a while to populate or if anything pops up let the script contuine to run it will makes the files eventually, we all have different systems so keep that in mind
 
-## What it shows now:
-1. It shows data for:
+## This project is adding to my second project I will put a link to that here: https://github.com/millJosh/it3038c-scripts/tree/main/project2 
+
+## What my updated project shows now:
+1. It shows data for: (Please refer to the screenshots above for what they look like)
 CPU’s Temperature and usage
 Memory Status (refer to the link for project 2)
-Disk Data (Space, 
+Disk Data 
 The Network Interfaces
 2. Automatically does a network scan of your local IP address to find potential vulnerabilities in the network using Nmap
-3. It logs all these pieces of data in 2 different log files one for the computer data and the scan data
-4. It takes these logs and puts them in a web browser for users to look at instead of having to open two files they can go to the browser and see the files in real time as they update. Of course, you can still go to the files themselves and see them but you would have to reload them as the script is still running, the plus side is that the data will be saved as the web browser will end when you stop the script. I didn’t put a count on how long the files will be made because I want users to be able to look at the web browser for as long as they want.
-5. It also has a triple count of retry throws that will happen if an error occurs I don’t expect you to go through this so I will upload an example of it above.
+3. It logs all these pieces of data in 2 different log files one for the system data and the nmap scan data
+4. It takes these logs and puts them in a web browser for users to look at instead of having to open two files they can go to the browser and see the files in real time as they update. Of course, you can still go to the files themselves and see them but you would have to reload them as the script is still running, the plus side is that the data will be saved in those files when you stop the script. The web browser doesn't have this option and will end when you stop the script(if your lucky the screen will stay and you can still view the data in the web browser depending on your connection). I also didn’t put a count on how long the files will update because I want users to be able to look at the web browser for as long as they want.
+5. It also has a triple count of retry throws that will happen if an error occurs I don’t expect users to go through this so I will upload an example of it above.
 
 ## Why I think this is useful
 System Monitoring:
