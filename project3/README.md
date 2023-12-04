@@ -18,7 +18,7 @@
 # Please keep in mind the following:
 ## The data it shows you will be different, however, the names should still be the same for the command prompt, files, and web browser, if your port 3000 is occupied there is a chance my code will not work in a web browser, you can either change the files port to a different one, or you might have to clear that port for it to work on the web
 
-# Comple more things!
+# Couple more things!
 ## I did mine in Linux Centos, so the people who do it there will have a smoother time I did not try this on Powershell but it should work on there as well if you can download and install everything needed. Also, if the files are taking a while to populate or if anything pops up let the script continue to run it will make the files eventually, we all have different systems so keep that in mind, Thank You.
 
 ## What my updated project shows now:
