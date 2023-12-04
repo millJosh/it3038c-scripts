@@ -1,3 +1,4 @@
+// Imports the required Node.js dependencies we need for the lab
 const os = require('os');
 const fs = require('fs');
 const si = require('systeminformation');
@@ -5,10 +6,11 @@ const { exec } = require('child_process');
 const network = require('network');
 const express = require('express');
 
+// This creates the app for the server and specifies the port being used for it
 const app = express();
 const port = 3000;
 
-// Data size format
+// Creates a data size format to make the bytes eaxier to read
 function dataSize(bytes) {
     const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
     if (bytes === 0) return '0 Byte';
@@ -16,7 +18,7 @@ function dataSize(bytes) {
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 }
 
-// This handles asynchronous tasks through a retry mechanism
+// This handles asynchronous tasks through a retry mechanism through a delay with 3 max entries
 async function taskRetry(asyncTask, maxRetries = 3, retryDelay = 1000) {
     let retries = 0;
 
@@ -35,12 +37,12 @@ async function taskRetry(asyncTask, maxRetries = 3, retryDelay = 1000) {
     throw new Error(`Can't complete task, no more attempts.`);
 }
 
-// Lets me create a delay with the use of promises from the child_process dependency
+// Helps create delays with the use of promises from the child_process dependency
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Displays system information like the name, architecture, and uptime, for the uptime I added values to make it the time I wanted it to show
+// Displays system information like the name, architecture, and uptime
 function systemInfo() {
     const osType = os.type();
     const osArch = os.arch();
@@ -53,7 +55,7 @@ function systemInfo() {
     };
 }
 
-// CPU temperature and this also has an error catch message if it can't be obtained
+// Grabs CPU temperature and this also has an error catch message if it can't be obtained
 async function grabCpuTemperature() {
     try {
         const temperature = await si.cpuTemperature();
@@ -64,7 +66,7 @@ async function grabCpuTemperature() {
     }
 }
 
-// CPU usage and has an error message if it can't be obtained
+// Grabs CPU usage and has an error message if it can't be obtained
 async function grabCpuUsage() {
     try {
         const usage = await si.currentLoad();
@@ -81,7 +83,7 @@ async function grabCpuUsage() {
     }
 }
 
-// This lets someone extract the disk information I think is most useful to a person running the script
+// This lets someone extract the disk information I think is most useful to a person running the script, has a error messages as well
 async function diskSpace() {
     try {
         const disks = await si.fsSize();
@@ -98,7 +100,7 @@ async function diskSpace() {
     }
 }
 
-// This displays the network information I think users would have to search for and it can be tedious, so I wanted to help with that
+// This displays the network information I think users would have to search for and it can be tedious, so I wanted to help with that, has a error messages as well
 async function grabNetworkInfo() {
     try {
         const networkInfo = await si.networkInterfaces();
@@ -115,7 +117,7 @@ async function grabNetworkInfo() {
     }
 }
 
-// This will grab the private IP address from the user's machine and print a error message if it can't
+// This will grab the private IP address from the user's machine and print a error message if it can't be found
 async function grabPrivateIpAddress() {
     return new Promise((resolve, reject) => {
         network.get_private_ip((err, ip) => {
@@ -179,17 +181,17 @@ async function systemDatandNmapData() {
         fs.writeFileSync(outputFilePath, dataInfo);
         console.log('System info saved to SystemInformation.txt');
 
-        // Runs an Nmap scan after a system data file is created (the systemDatandNmapData scan)
+        //Runs scan after SystemInformation.txt is made
         await taskRetry(() => runNmapScan(targetIpAddress));
     });
 }
 
-// This runs another Nmap scan and saves what is outputted a standalone scan but contrubites the security lookup file
+// External runs a Nmap scan and save results to SecurityLookUp.txt file
 async function runNmapScan(targetIpAddress) {
     await taskRetry(() => _runNmapScan(targetIpAddress));
 }
 
-// Function to run an Nmap scan and save the results to a SecurityLookUp.txt file
+// Internally runs a Nmap scan and saves the results to SecurityLookUp.txt file
 function _runNmapScan(targetIpAddress) {
     const outputFilePath = 'SecurityLookUp.txt';
     const nmapCommand = `nmap -Pn -p- --open --script vuln ${targetIpAddress}`;
@@ -217,13 +219,12 @@ function _runNmapScan(targetIpAddress) {
     });
 }
 
-// Once the script runs this will save the data immediately and then after 30 seconds
-// I didn't put a stop to this so users can look at the browser freely; they can stop it on their own with control and c in the command prompt
-
+// Once the script runs, this will save the data immediately and keep saving after 30 seconds intervals
+// I didn't put a stop to this so users can look at the web browser freely; they can stop it on their own with control and c in the command prompt
 systemDatandNmapData();
 const interval = setInterval(systemDatandNmapData, 30000);
 
-// This gives a route for the web interface
+// This gives a route for the web interface to display the files
 app.get('/', async (req, res) => {
     try {
         // These read the files
@@ -243,7 +244,7 @@ app.get('/', async (req, res) => {
     }
 });
 
-// Web server start
+// Starts the web server
 app.listen(port, () => {
     console.log(`Web running at http://localhost:${port}`);
 });
