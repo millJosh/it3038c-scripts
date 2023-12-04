@@ -83,7 +83,7 @@ npm install os
 Follow that format for each dependency 
 
 ### Using Node
-You should be able to use Node and the dependencies now, you just need to download the project file "FinalProject.js", and go to a machine (RECOMMENDED: Linux machine) that you installed Node on and move the file there so you can use the commands to run this project, or you could just download the file directly on that machine as well. To get the results as shown above, in the command prompt go to the directory you put the file in and you would type node than the file name in the command prompt. 
+You should be able to use Node and the dependencies, now you just need to download the project file "FinalProject.js", and go to a machine (RECOMMENDED: Linux machine) that you installed Node on and move the file there so you can use the commands to run this project, or you could just download the file directly on that machine as well. To get the results as shown above, in the command prompt go to the directory you put the file in and you would type node than the file name in the command prompt. 
 
 So it would look something like this:
 
