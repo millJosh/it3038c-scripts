@@ -89,11 +89,11 @@ So it would look something like this:
 
 node FinalProject.js
 
-After you have run it and you want to look at the files it made, go to your files on your computer and the directory you used on your command prompt and it should be there.
+After you have run it and you want to look at the files it made, go to your files on your computer and the directory you used on your command prompt and they should be there.
 
-To view it on the web browser you HAVE to keep the script running, if it is running you can either click the link inside the command prompt or type in https//:localhost:3000 in Firefox on Centos or the browser of your choice on PowerShell and it should be there. 
+To view it on the web browser you HAVE to keep the script running, if it is running you can either click the link inside the command prompt or type https//:localhost:3000 in Firefox on Centos or the browser of your choice on PowerShell and it should be there. 
 
-The script should still be running after you are done go to your command prompt and hit control and c at the same time and that will stop it.
+The script should still be running, if you are done looking at the files go to your command prompt and hit control and c at the same time and that will stop the script.
 
 And that is everything, I thank you for your time!
 
