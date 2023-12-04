@@ -37,7 +37,7 @@
 2. Through automated security scans it can identify potential vulnerabilities in the network especially useful needing to close a port or monitor their system.
 3. With data logging users can review historical data track changes over time, and reflect on their actions that made their machine's performance worse or better.  With the logs, they can store them in a safe location as well.
 4. With the retry mechanism, let's say we are fetching the CPU temperature for example, it can improve reliability for data collection and help in situations where errors occur. 
-5. This one was kinda just me having fun partially but it has its uses. Through the web interface, it gives users a convenient way to access and view information without having to keep their files or open them.
+5. This one was kind of just me having fun but it has its uses. Through the web interface, it gives users a convenient way to access and view information without having to keep their files or open them.
 6. With the automatic dynamic IP grab, allows it to be used on different networks to work on this project. 
 
 Other Reasons:
