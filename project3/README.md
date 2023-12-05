@@ -19,7 +19,7 @@
 ## The data it shows you will be different, however, the names should still be the same for the command prompt, files, and web browser, if your port 3000 is occupied there is a chance my code will not work in a web browser, you can either change the files port to a different one, or you might have to clear that port for it to work on the web
 
 # Couple more things!
-## I did mine in Linux Centos, so the people who do it there will have a smoother time I did not try this on Powershell but it should work on there as well if you can download and install everything needed. Also, if the files are taking a while to populate or if anything pops up let the script continue to run it will make the files eventually, we all have different systems so keep that in mind, Thank You.
+## I did mine in Linux Centos, so the people who do it there will have a smoother time which I would recommend doing it on, I did not try this on Powershell but it should work on there as well if you can download and install everything needed. Also, if the files are taking a while to populate or if anything pops up let the script continue to run it will make the files eventually, we all have different systems so keep that in mind, Thank You.
 
 ## What my updated project shows now:
 1. It shows data for: (Please refer to the screenshots above for what they look like)
@@ -74,13 +74,17 @@ $ node --version $ npm --version
 
 The simplest way is to do the following in a command prompt:
 
-npm install os fs systeminformation child_process network express
+$ npm install os fs systeminformation child_process network express
 
 Or you could do them one at a time like:
 
-npm install os
+$ npm install os
 
 Follow that format for each dependency 
+
+You also need to install Nmap, you can do this by
+
+$ sudo yum install nmap (CentOS)
 
 ### Using Node
 You should be able to use Node and the dependencies, now you just need to download the project file "FinalProject.js", and go to a machine (RECOMMENDED: Linux machine) that you installed Node on and move the file there so you can use the commands to run this project, or you could just download the file directly on that machine as well. To get the results as shown above, in the command prompt go to the directory you put the file in and you would type node than the file name in the command prompt. 
